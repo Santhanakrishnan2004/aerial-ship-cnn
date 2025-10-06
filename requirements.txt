@@ -1,6 +1,7 @@
-fastai==2.7.15
-torch>=2.0.0
+fastai
+torch
 torchvision
-gradio==4.42.0
+gradio
 huggingface_hub
 Pillow
+
