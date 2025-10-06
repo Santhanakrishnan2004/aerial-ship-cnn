@@ -1,6 +1,12 @@
 from fastai.vision.all import *
 import gradio as gr
+from huggingface_hub import hf_hub_download
+from fastai.vision.all import load_learner
 
+model_path = hf_hub_download(
+    repo_id="VSakhi/aerial-ship-detector",  # your MODEL repo, not Space
+    filename="export.pkl"
+)
 # Load model
 learn = load_learner('export.pkl')
 
